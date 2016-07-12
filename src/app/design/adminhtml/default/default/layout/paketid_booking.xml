@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+    <adminhtml_sales_order_view>
+        <reference name="order_info">
+            <block type="paketid_booking/adminhtml_sales_order_view_info_booking" name="paketid_booking.order.info.booking.block" template="paketid/booking.phtml" after="order_history" />
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

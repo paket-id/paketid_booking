@@ -1,0 +1,38 @@
+<?php $order = $this->getOrder() ?>
+<?php $bookings = Mage::getModel('paketid_booking/booking_result')->getCollection()->addOrderFilter($order) ?>
+<?php if(count($bookings)): ?>
+<div class="entry-edit box-left">
+    <div class="entry-edit-head">
+        <h4 class="icon-head"><?php echo $this->__('Booking Result') ?></h4>
+    </div>
+    <fieldset>
+        <div id="paketid_booking_booking_result_block">
+            <?php foreach($bookings as $booking): ?>
+                <table  cellspacing="0" class="form-list">
+                    <tr>
+                        <td class="label"><label><?php echo $this->__('Booking ID') ?></label></td>
+                        <td class="value"><strong><span id="booking_id"><?php echo $booking->getBookingId() ?></span></strong></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label><?php echo $this->__('Booking Code') ?></label></td>
+                        <td class="value"><strong><span id="booking_code"><?php echo $booking->getBookingCode() ?></span></strong></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label><?php echo $this->__('Reference Code') ?></label></td>
+                        <td class="value"><strong><span id="reference_code"><?php echo $booking->getReferenceCode() ?></span></strong></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label><?php echo $this->__('Booking Date') ?></label></td>
+                        <td class="value"><strong><span id="booking_date"><?php echo $booking->getBookingDate() ?></span></strong></td>
+                    </tr>
+                    <tr>
+                        <td class="label"><label><?php echo $this->__('Expiry Date') ?></label></td>
+                        <td class="value"><strong><span id="expiry_date"><?php echo $booking->getExpiryDate() ?></span></strong></td>
+                    </tr>
+                </table>
+            <?php endforeach; ?>
+        </div>
+    </fieldset>
+</div>
+<div class="clear"></div>
+<?php endif; ?>

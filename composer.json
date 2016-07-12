@@ -1,0 +1,15 @@
+{
+    "name": "PaketId/Booking",
+    "license": "OSL-3.0",
+    "type": "magento-module",
+    "description": "Paket.id module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Jimmy Hoang",
+            "email":"foxervn@gmail.com"
+        }
+    ]
+}
