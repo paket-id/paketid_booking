@@ -1,12 +1,12 @@
 <?php $order = $this->getOrder() ?>
-<?php $bookings = Mage::getModel('paketid_booking/booking_result')->getCollection()->addOrderFilter($order) ?>
+<?php $bookings = Mage::getModel('paketid_booking/result')->getCollection()->addOrderFilter($order) ?>
 <?php if(count($bookings)): ?>
 <div class="entry-edit box-left">
     <div class="entry-edit-head">
         <h4 class="icon-head"><?php echo $this->__('Booking Result') ?></h4>
     </div>
     <fieldset>
-        <div id="paketid_booking_booking_result_block">
+        <div id="paketid_booking_result_block">
             <?php foreach($bookings as $booking): ?>
                 <table  cellspacing="0" class="form-list">
                     <tr>

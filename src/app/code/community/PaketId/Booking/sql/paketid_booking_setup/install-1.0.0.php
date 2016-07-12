@@ -3,12 +3,13 @@
  * @Author: Phu Hoang
  * @Date:   2016-07-08 01:39:31
  * @Last Modified by:   Phu Hoang
- * @Last Modified time: 2016-07-13 00:28:17
+ * @Last Modified time: 2016-07-13 00:49:07
  */
 
 $this->startSetup();
+
 $table = $this->getConnection()
-    ->newTable($this->getTable('paketid_booking/booking_result'))
+    ->newTable($this->getTable('paketid_booking/result'))
     ->addColumn(
         'entity_id',
         Varien_Db_Ddl_Table::TYPE_INTEGER,
@@ -239,14 +240,14 @@ $table = $this->getConnection()
     )
     ->addIndex(
         $this->getIdxName(
-            'paketid_booking/booking_result',
+            'paketid_booking/result',
             array('order_id')
         ),
         array('order_id')
     )
     ->addForeignKey(
         $this->getFkName(
-            'paketid_booking/booking_result',
+            'paketid_booking/result',
             'order_id',
             'sales/order',
             'entity_id'

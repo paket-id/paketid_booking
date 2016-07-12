@@ -33,9 +33,9 @@
             <paketid_booking_resource>
                 <class>PaketId_Booking_Model_Resource</class>
                 <entities>
-                    <booking_result>
+                    <result>
                         <table>paketid_booking_result</table>
-                    </booking_result>
+                    </result>
                 </entities>
             </paketid_booking_resource>
         </models>

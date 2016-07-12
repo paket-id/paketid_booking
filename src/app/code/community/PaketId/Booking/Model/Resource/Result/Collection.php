@@ -3,10 +3,10 @@
  * @Author: Phu Hoang
  * @Date:   2016-07-08 01:59:12
  * @Last Modified by:   Phu Hoang
- * @Last Modified time: 2016-07-13 00:28:09
+ * @Last Modified time: 2016-07-13 00:43:41
  */
 
-class PaketId_Booking_Model_Resource_Booking_Result_Collection extends Mage_Core_Model_Resource_Db_Collection_Abstract
+class PaketId_Booking_Model_Resource_Result_Collection extends Mage_Core_Model_Resource_Db_Collection_Abstract
 {
 	/**
      * constructor
@@ -18,7 +18,7 @@ class PaketId_Booking_Model_Resource_Booking_Result_Collection extends Mage_Core
     protected function _construct()
     {
         parent::_construct();
-        $this->_init('paketid_booking/booking_result');
+        $this->_init('paketid_booking/result');
     }
 
 	public function addOrderFilter($order)

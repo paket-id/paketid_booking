@@ -3,7 +3,7 @@
  * @Author: Phu Hoang
  * @Date:   2016-07-07 23:53:44
  * @Last Modified by:   Phu Hoang
- * @Last Modified time: 2016-07-13 00:27:53
+ * @Last Modified time: 2016-07-13 00:39:50
  */
 
 class PaketId_Booking_Model_Observer{
@@ -47,7 +47,7 @@ class PaketId_Booking_Model_Observer{
 			$response = $api->send('array');
 
 			if($response['success'] == 1){
-				$model = Mage::getModel('paketid_booking/booking_result');
+				$model = Mage::getModel('paketid_booking/result');
 				$model->setData($response['detail']);
 				$model->setOrderId($order->getId());
 				$model->save();
