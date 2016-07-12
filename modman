@@ -1,0 +1,4 @@
+src/app/code/community/PaketId/Booking                                          app/code/community/PaketId/Booking
+src/app/design/adminhtml/default/default/layout/paketid_booking.xml             app/design/adminhtml/default/default/layout/paketid_booking.xml
+src/app/design/adminhtml/default/default/template/paketid/booking.phtml         app/design/adminhtml/default/default/template/paketid/booking.phtml
+src/app/etc/modules/PaketId_Booking.xml                                         app/etc/modules/PaketId_Booking.xml
