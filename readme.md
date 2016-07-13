@@ -5,15 +5,11 @@ Facts
 -----
 - version: 1.0.0
 - extension key: PaketId_Booking
-- [extension on Magento Connect](http://www.magentocommerce.com/magento-connect/paketid)-paketid-1234.html)
-- Magento Connect 1.0 extension key: magento-community/PaketId_Booking
-- Magento Connect 2.0 extension key: http://connect20.magentocommerce.com/community/PaketId_Booking
-- [extension on GitHub](https://github.com/paketid/PaketId_Booking)
-- [direct download link](http://connect.magentocommerce.com/community/get/PaketId_Booking-1.0.0.tgz)
+- [extension on GitHub](https://github.com/hmphu/paketid_booking)
 
 Description
 -----------
-This paragraph describes what the extension does.
+Paket.id booking module for Magento 1.4.x - 1.9.x
 
 Requirements
 ------------
@@ -27,19 +23,33 @@ Compatibility
 
 Installation Instructions
 -------------------------
-1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
-2. Clear the cache, logout from the admin panel and then login again.
-3. Configure and activate the extension under System - Configuration - Company - Example Extension.
-4. ...
 
-Uninstallation
---------------
-1. Remove all extension files from your Magento installation
-2. ...
+#### Option 1: Extract and copy
+
+1. Upload all files and folders from the "src" folder to your Magento root directory.
+2. Clear the Magento cache (`AdminPanel > System > Cache Management`), logout from the admin panel and then login again.
+3. Go to `AdminPanel > System > Configurations > PaketId > Booking API Options` to setup the API email and API key.
+
+#### Option 2: Install using [modman](https://github.com/colinmollenhour/modman)
+
+```
+modman clone https://github.com/hmphu/paketid_booking
+```
+
+#### Option 3: Using the [Magento Hackathon Composer Installer](https://github.com/magento-hackathon/magento-composer-installer)
+
+```
+composer require hmphu/paketid_booking 1.0.*
+```
+Or edit your composer.json file directly and add this line to the "require" section:
+
+```
+"hmphu/paketid_booking": "1.0.*"
+```
 
 Support
 -------
-If you have any issues with this extension, open an issue on [GitHub](https://github.com/paketid/PaketId_Booking/issues).
+If you have any issues with this extension, open an issue on [GitHub](https://github.com/hmphu/paketid_booking/issues).
 
 Contribution
 ------------
@@ -48,8 +58,7 @@ Any contribution is highly appreciated. The best way to contribute code is to op
 Developer
 ---------
 Jimmy Hoang
-[http://www.firstname-lastname.com](http://www.firstname-lastname.com)
-[@FirstNameLastName](https://twitter.com/FirstNameLastName)
+[https://hmphu.com](https://hmphu.com)
 
 Licence
 -------

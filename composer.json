@@ -1,8 +1,8 @@
 {
-    "name": "PaketId/Booking",
+    "name": "hmphu/paketid_booking",
     "license": "OSL-3.0",
     "type": "magento-module",
-    "description": "Paket.id module",
+    "description": "Paket.id booking module",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     },
