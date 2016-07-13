@@ -1,4 +1,4 @@
-PaketId Booking Extension
+PaketId Magento Extension
 =====================
 Paket.id booking module
 Facts
