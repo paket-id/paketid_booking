@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config>
+
+  <modules>
+    <PaketId_Shipping>
+      <version>1.0.0</version>
+    </PaketId_Shipping>
+  </modules>
+
+  <global>
+
+    <blocks>
+      <paketid_shipping>
+        <class>PaketId_Shipping_Block</class>
+      </paketid_shipping>
+    </blocks>
+
+    <models>
+
+      <paketid_shipping>
+        <class>PaketId_Shipping_Model</class>
+        <resourceModel>paketid_shipping_resource</resourceModel>
+      </paketid_shipping>
+
+      <paketid_shipping_resource>
+        <class>PaketId_Shipping_Model_Resource</class>
+          <entities>
+            <result>
+              <table>paketid_booking_result</table>
+            </result>
+          </entities>
+      </paketid_shipping_resource>
+
+    </models>
+
+    <helpers>
+      <paketid_shipping>
+        <class>PaketId_Shipping_Helper</class>
+      </paketid_shipping>
+    </helpers>
+
+  </global>
+
+  <adminhtml>
+    <layout>
+      <updates>
+        <paketid_shipping>
+          <file>paketid_shipping.xml</file>
+        </paketid_shipping>
+      </updates>
+    </layout>
+  </adminhtml>
+
+  <default>
+    <carriers>
+      <paketid_shipping>
+        <active>1</active>
+        <sallowspecific>1</sallowspecific>
+        <model>paketid_shipping/carrier</model>
+        <name>Paket ID Shipping Extension</name>
+        <price>10.00</price>
+        <title>Paket ID Shipping Extension</title>
+      </paketid_shipping>
+    </carriers>
+  </default>
+
+</config>
