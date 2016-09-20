@@ -17,13 +17,16 @@
  */
 -->
 <config>
+    <!--
     <tabs>
         <paketid_configs translate="label" module="paketid_booking">
             <label>PaketId</label>
             <sort_order>1000</sort_order>
         </paketid_configs>
     </tabs> 
+-->
     <sections>
+        <!--
         <paketid_booking translate="label" module="paketid_booking">
             <label>Booking API Options</label>
             <tab>paketid_configs</tab>
@@ -32,9 +35,11 @@
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
+        -->
+        <carriers>
             <groups>
                 <api translate="label">
-                    <label>API</label>
+                    <label>Paket ID Booking</label>
                     <frontend_type>select</frontend_type>
                     <sort_order>1</sort_order>
                     <show_in_default>1</show_in_default>
@@ -71,6 +76,9 @@
 				    </fields>              
                 </api>
             </groups>
+        </carriers>
+        <!--    
         </paketid_booking>
+    -->
     </sections>     
 </config>
