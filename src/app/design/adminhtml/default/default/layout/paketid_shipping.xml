@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<layout version="1.0">
-    <adminhtml_sales_order_shipment_new>
-        <reference name="content">
-            <block type="paketid_shipping/adminhtml_sales_order_shipment_view_shipping" name="paketid_shipping.order.view.shipping.block" template="paketid/shipping.phtml"/>
-        </reference>
-    </adminhtml_sales_order_shipment_new>
-</layout>
